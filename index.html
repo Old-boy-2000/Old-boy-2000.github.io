@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西布伦</title>
+    <!-- Bootstrap 3.3 CSS -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <!-- 自定义CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed hamburger" data-toggle="collapse"
+                    data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.png" alt="西布伦" class="logo-img">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right nav-links">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li><a href="./points_exchange.html">积分兑换</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- 轮播图 -->
+    <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+        <!-- 指示器 -->
+        <ol class="carousel-indicators">
+            <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mainCarousel" data-slide-to="1"></li>
+            <li data-target="#mainCarousel" data-slide-to="2"></li>
+            <li data-target="#mainCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- 轮播项目 - 每张图片都添加了超链接 -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <a href="#">
+                    <img src="./images/banner_1.jpg" alt="轮播图1">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="./images/banner_2.jpg" alt="轮播图2">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="./images/banner_3.jpg" alt="轮播图3">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="./images/banner_1.jpg" alt="轮播图4">
+                </a>
+            </div>
+        </div>
+
+        <!-- 控制按钮 -->
+        <a class="left carousel-control" href="#mainCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#mainCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <!-- 教师介绍 -->
+    <section class="teachers-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="teachers-title text-center">名师团队</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="teachers-container">
+                        <div class="teachers-scroll">
+                            <!-- 教师1 -->
+                            <div class="teacher-card">
+                                <div class="teacher-img">
+                                    <img src="./images/teacher_niko_icon.jpg" alt="教师1" class="img-responsive">
+                                </div>
+                                <div class="teacher-info">
+                                    <div class="teacher-name">Niko老师</div>
+                                    <div class="teacher-desc">金牌教师 | 校长/STEAM教育专家</div>
+                                </div>
+                            </div>
+
+                            <!-- 教师2 -->
+                            <div class="teacher-card">
+                                <div class="teacher-img">
+                                    <img src="./images/teacher_oli_icon.jpg" alt="教师2" class="img-responsive">
+                                </div>
+                                <div class="teacher-info">
+                                    <div class="teacher-name">Oli老师</div>
+                                    <div class="teacher-desc">金牌教师 | 乐高/STEAM编程老师</div>
+                                </div>
+                            </div>
+
+                            <!-- 教师3 -->
+                            <div class="teacher-card">
+                                <div class="teacher-img">
+                                    <img src="./images/teacher_Code_icon.jpg" alt="教师3" class="img-responsive">
+                                </div>
+                                <div class="teacher-info">
+                                    <div class="teacher-name">Code老师</div>
+                                    <div class="teacher-desc">金牌教师 | 机器人/信息学老师</div>
+                                </div>
+                            </div>
+
+                            <!-- 教师4 -->
+                            <div class="teacher-card">
+                                <div class="teacher-img">
+                                    <img src="./images/teacher_Corki_icon.jpg" alt="教师4" class="img-responsive">
+                                </div>
+                                <div class="teacher-info">
+                                    <div class="teacher-name">Corki老师</div>
+                                    <div class="teacher-desc">金牌教师 | 机器人/STEAM编程老师</div>
+                                </div>
+                            </div>
+
+                            <!-- 教师5 -->
+                            <div class="teacher-card">
+                                <div class="teacher-img">
+                                    <img src="./images/teacher_sun_icon.jpg" alt="教师5" class="img-responsive">
+                                </div>
+                                <div class="teacher-info">
+                                    <div class="teacher-name">Sun老师</div>
+                                    <div class="teacher-desc">金牌教师 | 机器人/软件编程老师</div>
+                                </div>
+                            </div>
+
+                            <!-- 教师6 -->
+                            <div class="teacher-card">
+                                <div class="teacher-img">
+                                    <img src="./images/teacher_haven_icon.jpg" alt="教师6" class="img-responsive">
+                                </div>
+                                <div class="teacher-info">
+                                    <div class="teacher-name">Haven老师</div>
+                                    <div class="teacher-desc">金牌教师 | 机器人/STEAM编程老师</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 课程介绍 -->
+    <section class="courses">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="courses-title text-center">课程介绍</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!-- 课程1 -->
+                <div class="col-sm-6 col-md-4">
+                    <a href="./points_exchange.html" class="course-link">
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="./images/logo.png" alt="Web开发基础" class="img-responsive">
+                            </div>
+                            <div class="course-content">
+                                <h3>HABA逻辑思维</h3>
+                                <p>天才第一步</p>
+                                <span class="btn btn-primary">了解更多</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 课程2 -->
+                <div class="col-sm-6 col-md-4">
+                    <a href="./points_exchange.html" class="course-link">
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="./images/logo.png" alt="移动应用开发" class="img-responsive">
+                            </div>
+                            <div class="course-content">
+                                <h3>机器人</h3>
+                                <p>机械飞升</p>
+                                <span class="btn btn-primary">了解更多</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 课程3 -->
+                <div class="col-sm-6 col-md-4">
+                    <a href="./points_exchange.html" class="course-link">
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="./images/logo.png" alt="数据科学入门" class="img-responsive">
+                            </div>
+                            <div class="course-content">
+                                <h3>少儿编程</h3>
+                                <p>从入门到入狱</p>
+                                <span class="btn btn-primary">了解更多</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 课程4 -->
+                <div class="col-sm-6 col-md-4">
+                    <a href="./points_exchange.html" class="course-link">
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="./images/logo.png" alt="人工智能基础" class="img-responsive">
+                            </div>
+                            <div class="course-content">
+                                <h3>信息奥赛</h3>
+                                <p>习得可天下无敌</p>
+                                <span class="btn btn-primary">了解更多</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 课程5 -->
+                <div class="col-sm-6 col-md-4">
+                    <a href="./points_exchange.html" class="course-link">
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="./images/logo.png" alt="UI/UX设计" class="img-responsive">
+                            </div>
+                            <div class="course-content">
+                                <h3>无人机</h3>
+                                <p>想飞吗</p>
+                                <span class="btn btn-primary">了解更多</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery (Bootstrap 3.3 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!-- 自定义JS -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
