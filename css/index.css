@@ -409,19 +409,19 @@
     .carousel {
         height: 260px;
     }
-/* 
-     .teachers-title,
+
+     /* .teachers-title,
     .courses-title {
         font-size: 1.6rem;
         padding-bottom: 12px;
         margin-bottom: 20px;
     }
-    
+     */
     .teachers-title::after,
     .courses-title::after {
         width: 60px;
         height: 2px;
-    } */
+    }
 
 }
 
