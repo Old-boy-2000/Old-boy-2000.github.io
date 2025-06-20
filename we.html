@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>响应式图片展示</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- 自定义CSS -->
+    <style>
+        .gallery-container {
+            padding: 0 15px;
+        }
+        .gallery-item {
+            margin-bottom: 30px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container gallery-container">
+        <!-- 居中的标题 -->
+        <header class="text-center my-5">
+            <h1 class="display-4">我的图片展示</h1>
+        </header>
+        
+        <!-- 图片展示区域 -->
+        <main>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/1200x600" class="img-fluid" alt="示例图片1">
+            </div>
+            
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/1200x600" class="img-fluid" alt="示例图片2">
+            </div>
+            
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/1200x600" class="img-fluid" alt="示例图片3">
+            </div>
+        </main>
+    </div>
+
+     <!-- jQuery (Bootstrap 3.3 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+</body>
+</html>
