@@ -1,6 +1,6 @@
-if (navigator.userAgent.indexOf('MicroMessenger') !== -1) {
-    window.location.href = window.location.href + '?t=' + new Date().getTime();
-}
+// if (navigator.userAgent.indexOf('MicroMessenger') !== -1) {
+//     window.location.href = window.location.href + '?t=' + new Date().getTime();
+// }
 
 // 初始化轮播图
 $(document).ready(function () {
