@@ -56,3 +56,47 @@ $(document).ready(function () {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log("脚本已加载");
+    const container = document.querySelector('.teachers-container');
+  const team = document.querySelector('.teachers-scroll');
+  const cards = document.querySelectorAll('.teacher-card');
+  
+  // 1. 自动克隆卡片（实现无缝循环）
+  cards.forEach(card => {
+    const clone = card.cloneNode(true);
+    team.appendChild(clone);
+  });
+
+  // 2. 滚动控制
+  let scrollPos = 0;
+  const speed = 1; // 调节速度 (建议0.5-2)
+  let isPaused = false;
+  
+  function autoScroll() {
+    if (!isPaused) {
+      scrollPos += speed;
+      
+      // 到达克隆区域时无缝跳转
+      if (scrollPos >= team.scrollWidth / 2) {
+        scrollPos = 0;
+        team.style.transition = 'none';
+        team.style.transform = `translateX(0)`;
+        // 强制重绘
+        void team.offsetWidth; 
+      }
+      
+      team.style.transition = 'transform 0.1s linear';
+      team.style.transform = `translateX(-${scrollPos}px)`;
+    }
+    requestAnimationFrame(autoScroll);
+  }
+
+  // 3. 悬停控制
+  container.addEventListener('mouseenter', () => isPaused = true);
+  container.addEventListener('mouseleave', () => isPaused = false);
+
+  // 启动滚动
+  autoScroll();
+});
