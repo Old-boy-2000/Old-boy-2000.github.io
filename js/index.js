@@ -1,3 +1,7 @@
+if (navigator.userAgent.indexOf('MicroMessenger') !== -1) {
+    window.location.href = window.location.href + '?t=' + new Date().getTime();
+}
+
 // 初始化轮播图
 $(document).ready(function () {
     // 轮播图自动播放已通过Bootstrap的data-ride="carousel"属性设置
